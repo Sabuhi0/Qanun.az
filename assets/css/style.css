@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: transparent;
+    color: #000;
+}
+
+.container {
+    max-width: 1114px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*---Number---*/
+
+.wtsp {
+    color: #000000;
+    font-size: 13px;
+    line-height: 30px;
+    font-family: 'ProximaNova';
+}
+
+.add {
+    width: 100%;
+    height: 30px;
+    background: #F7F7F7;
+}
+
+
+/*---Menu---*/
+
+.header-menu {
+    display: flex;
+}
+
+.header-tag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-tag {
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 30px;
+    font-family: 'ProximaNova';
+}
+
+.menu-tag:not(:last-child) {
+    margin-right: 25px;
+}
+
+
+/*assets*/
+
+.assets {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'ProximaNova';
+}
+
+
+/* languages */
+
+.language {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    font-family: 'ProximaNova';
+}
+
+.engilsh:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+/* Svg */
+
+.box {
+    display: flex;
+}
+
+.group-2 {
+    position: relative;
+    left: 10px;
+}
+
+.group-35 {
+    position: relative;
+    left: 5px;
+}
+
+.svg,
+.svg-2 {
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+
+/* Search section */
+
+.container-search {
+    width: 100%;
+    max-width: 678px;
+}
+
+.section-search {
+    width: 100%;
+}
+
+.search-section {
+    display: flex;
+    height: 40px;
+}
+
+.search-icon {
+    position: relative;
+    right: 35px;
+    display: flex;
+}
+
+.search-input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    padding-right: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+    font-family: 'ProximaNova';
+}
+
+
+/* menu-2 */
+
+ul {
+    display: flex;
+    list-style: none;
+    line-height: 60px;
+}
+
+.list:not(:first-child) {
+    margin-left: 25px;
+}
+
+.list {
+    font-weight: bold;
+    font-family: 'ProximaNova';
+}
+
+.menu-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag {
+    font-weight: bold;
+    font-family: 'ProximaNova';
+}
+
+.qanun {
+    margin-right: 25px;
+}
+
+
+/* Yenilikler */
+
+.yeni {
+    font-size: 32px;
+    font-family: 'MacklinDisplay';
+}
+
+.yenilikler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.butun {
+    font-weight: bold;
+    line-height: 30px;
+    font-family: 'ProximaNova';
+}
+
+@font-face {
+    font-family: 'MacklinDisplay';
+    src: url('../fonts/MacklinDisplay-Light.woff2') format('woff2');
+    font-display: swap;
+}
+
+
+/* images */
+
+.images {
+    display: flex;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+}
+
+.alisa:not(:first-child) {
+    margin-left: 30px;
+}
+
+.eyni {
+    font-weight: bold;
+    font-family: 'ProximaNova';
+}
+
+.span {
+    font-size: 13px;
+    color: #6d6d6d;
+    font-family: 'ProximaNova';
+}
+
+.az {
+    display: flex;
+    margin-top: 10px;
+}
+
+.pul {
+    font-weight: bold;
+    font-family: 'ProximaNova';
+}
+
+.azn {
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+
+.heart {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.sebete {
+    display: flex;
+    font-family: 'ProximaNova';
+}
+
+.sebet {
+    border: solid 2px #db0909;
+    border-radius: 15px;
+    margin-left: 7%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+}

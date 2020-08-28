@@ -175,18 +175,18 @@ ul {
 
 /* Yenilikler */
 
-.yeni {
-    font-size: 32px;
-    font-family: 'MacklinDisplay';
-}
-
-.yenilikler {
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.butun {
+.new {
+    font-size: 32px;
+    font-family: 'MacklinDisplay';
+}
+
+.news {
     font-weight: bold;
     line-height: 30px;
     font-family: 'ProximaNova';
@@ -214,12 +214,17 @@ ul {
     margin-left: 30px;
 }
 
-.eyni {
+.alisa>img {
+    width: 100%;
+}
+
+.word {
     font-weight: bold;
+    font-size: 14px;
     font-family: 'ProximaNova';
 }
 
-.span {
+.poet {
     font-size: 13px;
     color: #6d6d6d;
     font-family: 'ProximaNova';
@@ -246,8 +251,7 @@ ul {
     margin-top: 13px;
 }
 
-.sebete {
-    display: flex;
+.basket {
     font-family: 'ProximaNova';
 }
 

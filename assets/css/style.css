@@ -399,7 +399,7 @@
             .flex {
                 display: flex;
             }
-            .art {
+            .col-6 {
                 display: flex;
                 font-family: 'ProximaNova';
                 font-weight: bold;
@@ -440,7 +440,7 @@
             .flex {
                 display: flex;
             }
-            .art {
+            .col-6 {
                 display: flex;
                 font-family: 'ProximaNova';
                 font-weight: bold;

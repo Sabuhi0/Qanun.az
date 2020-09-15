@@ -276,7 +276,7 @@
             align-items: center;
         }
         
-        .d-flex {
+        .flex {
             display: flex;
         }
         
@@ -478,7 +478,115 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+        /* Book hissesi */
+        
+        .img-book>.w-100 {
+            width: 320px;
+        }
+        
+        .row {
+            display: flex;
+        }
         
         .flex-column {
             flex-direction: column;
+        }
+        
+        .col {
+            font-family: 'ProximaNova';
+            margin-left: 20px;
+        }
+        
+        .mb-4 {
+            display: flex;
+            grid-gap: 5px;
+            list-style: none;
+        }
+        
+        .mp-5 {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .link {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #808080;
+        }
+        
+        .tarix {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        
+        .yazici {
+            font-weight: bold;
+            font-style: normal;
+            font-size: 16px;
+        }
+        
+        .d-flex {
+            display: flex;
+            padding: 5px;
+        }
+        
+        .key {
+            width: 25%;
+            word-wrap: break-word;
+        }
+        
+        .value {
+            font-weight: bold;
+        }
+        
+        .features .attribute:nth-child(odd) {
+            background: #F7F7F7;
+        }
+        
+        .starts {
+            display: flex;
+            margin-top: 20px;
+            grid-gap: 5px;
+        }
+        
+        .px-2 {
+            font-family: 'ProximaNova';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 35px;
+            letter-spacing: 1.25px;
+            color: #F1911D;
+        }
+        
+        .px-3,
+        .px-4 {
+            color: #808080;
+            font-size: 18px;
+        }
+        
+        .mt-2 {
+            font-family: 'ProximaNova';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            color: #000000;
+        }
+        
+        .mt-4 {
+            font-family: 'ProximaNova';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            color: #979797;
+        }
+        
+        .mt-3,
+        .ml-2 {
+            width: 25px;
+            margin-bottom: 17px;
+            margin-left: 6px;
         }

@@ -1,621 +1,893 @@
-        .item-title {
-            font-family: 'ProximaNova';
-            font-weight: bold;
-            font-size: 15px;
-        }
-        
-        .item-author {
-            font-weight: bold;
-            font-family: 'ProximaNova';
-            font-size: 11px;
-            color: #808080;
-        }
-        
-        .item-price {
-            font-family: 'ProximaNova';
-            font-size: 16px;
-            font-weight: bold;
-        }
-        
-        @media (min-width:950px) {
-            .col-md-2 {
-                display: flex;
-                margin-left: 10px;
-            }
-            .user-action {
-                display: flex;
-                align-items: center;
-                flex-direction: column
-            }
-            .action-img {
-                margin-bottom: 3px;
-            }
-            .user-action:not(:first-child) {
-                margin-left: 30px
-            }
-            .search-section {
-                margin-top: 15px;
-                display: flex;
-                align-items: center;
-                font-family: 'ProximaNova';
-            }
-            .section-link {
-                font-size: 48px;
-                font-family: 'MacklinDisplay';
-            }
-            .user-action {
-                font-size: 13px;
-            }
-            .items {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-gap: 30px;
-                padding-top: 20px;
-            }
-            .icon-burger {
-                display: none;
-            }
-            .md-none {
-                display: none;
-            }
-            .none {
-                display: none;
-            }
-        }
-        
-        @media (max-width:950px) {
-            .qanun-logo {
-                margin-bottom: 20px;
-            }
-            .action-img {
-                width: 25px;
-                float: right;
-                margin-top: 15px;
-            }
-            .none {
-                display: block;
-            }
-            .md-none {
-                display: none;
-            }
-            .icon-burger {
-                padding-right: 15px;
-                padding-bottom: 15px;
-            }
-            .header-menu {
-                display: inline-flex;
-                flex-wrap: wrap;
-            }
-            .wtsp {
-                font-size: 13px;
-            }
-            .menu {
-                font-size: 13px;
-            }
-            .search-section {
-                margin-top: 20px;
-            }
-            .section-link {
-                font-size: 36px;
-                font-family: 'MacklinDisplay';
-            }
-            .d-md-none {
-                display: none;
-            }
-            .items {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-gap: 25px;
-                padding-top: 20px;
-            }
-            .lorem {
-                margin-left: 25px;
-                font-size: 10px;
-            }
-            .main-silder {
-                margin-top: 15px;
-            }
-        }
-        
-        @media (max-width:768px) {
-            .d-md-none {
-                display: none;
-            }
-            .items {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-gap: 25px;
-                padding-top: 20px
-            }
-        }
-        
-        @media (max-width: 540px) {
-            .d-md-none {
-                display: none;
-            }
-            .items {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-gap: 25px;
-                padding-top: 20px;
-            }
-        }
-        
-        @media (max-width: 450px) {
-            .d-md-none {
-                display: none;
-            }
-            .items {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 25px;
-                padding-top: 20px;
-            }
-        }
-        
-        @font-face {
-            font-family: 'ProximaNova';
-            src: url('../fonts/ProximaNova-Regular.woff2') format('woff2');
-            font-display: swap;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            text-decoration: transparent;
-            color: #000;
-            box-sizing: border-box;
-        }
-        
-        .container {
-            max-width: 1114px;
-            margin: 0 auto;
-            width: 100%;
-            padding-left: 25px;
-            padding-right: 25px;
-        }
-        /*---Number---*/
-        
-        .wtsp {
-            color: #000000;
-            font-size: 13px;
-            line-height: 30px;
-            font-family: 'ProximaNova';
-        }
-        /*---header---*/
-        
-        .header {
-            width: 100%;
-            background: #F7F7F7;
-        }
-        
-        .header-menu {
-            display: flex;
-        }
-        
-        .menu {
-            list-style-type: none;
-            font-size: 13px;
-            line-height: 30px;
-            font-family: 'ProximaNova';
-        }
-        
-        @media (min-width:950px) {
-            .header-inner {
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-        
-        @media (max-width:950px) {
-            .d-md-none {
-                display: none;
-            }
-        }
-        
-        .menu:not(:last-child) {
-            margin-right: 25px;
-        }
-        /* languages */
-        
-        .languages {
-            display: flex;
-            list-style: none;
-            font-size: 12px;
-            margin-left: 12px;
-            font-family: 'ProximaNova';
-        }
-        
-        .language:not(:first-child) {
-            margin-left: 15px;
-            margin-right: 10px;
-        }
-        /* Search section */
-        
-        .col {
-            width: 100%;
-        }
-        
-        button[type=submit] {
-            cursor: pointer
-        }
-        
-        .main-search {
-            padding-left: 24px;
-            padding-top: 16px;
-            padding-bottom: 16px
-        }
-        
-        .locale:not(:first-child) {
-            margin-left: 16px
-        }
-        
-        .search-field,
-        .submit-search {
-            border: 1px solid #e7e7e7;
-        }
-        
-        .search-field {
-            padding: 12px;
-            border-right: 0;
-        }
-        
-        .submit-search {
-            border-left: 0;
-            padding-left: 17px;
-            padding-right: 17px;
-            background: none;
-        }
-        
-        .align-items-center {
-            align-items: center;
-        }
-        
-        .flex {
-            display: flex;
-        }
-        
-        .main-search {
-            padding-top: 16px;
-            padding-bottom: 16px
-        }
-        
-        .w-100 {
-            width: 100%;
-        }
-        /* menu-2 */
-        
-        ul {
-            display: flex;
-            list-style: none;
-            line-height: 70px;
-        }
-        
-        .nav-link:not(:first-child) {
-            margin-left: 20px;
-        }
-        
-        .nav-link {
-            font-weight: bold;
-            font-family: 'ProximaNova';
-        }
-        
-        .nav-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-tag {
-            font-weight: bold;
-            font-family: 'ProximaNova';
-        }
-        
-        .qanun {
-            margin-right: 25px;
-        }
-        /* Yenilikler */
-        
-        .section-tag {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 30px;
-        }
-        
-        .section-title {
-            font-weight: bold;
-            font-family: 'ProximaNova';
-        }
-        
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        @font-face {
-            font-family: 'MacklinDisplay';
-            src: url('../fonts/MacklinDisplay-Light.woff2') format('woff2');
-            font-display: swap;
-        }
-        /* images */
-        
-        .item>img {
-            width: 100%;
-        }
-        
-        .items {
-            width: 100%;
-            display: grid;
-        }
-        
-        .price-info {
-            display: flex;
-            margin-top: 10px;
-        }
-        
-        .icon {
-            margin-left: 5px;
-            margin-bottom: 8px;
-        }
-        
-        .article-actions {
-            display: flex;
-            align-items: center;
-            margin-top: 13px;
-        }
-        /* Basket */
-        
-        .add-basket {
-            border: solid 1px #db0909;
-            background-color: #ffff;
-            flex-grow: initial;
-            padding: 5px;
-            border-radius: 15px;
-            font-family: 'ProximaNova';
-            padding-left: 20px;
-            padding-right: 20px;
-            font-weight: 600;
-        }
-        
-        .add-wishlist {
-            border: none;
-            background-color: #fff;
-            margin-right: 5px;
-        }
-        
-        .row {
-            display: flex;
-        }
-        
-        .col-md-6:not(:first-child) {
-            margin-left: 30px;
-        }
-        
-        @media (min-width:950px) {
-            .flex {
-                display: flex;
-            }
-            .col-6 {
-                display: flex;
-                font-family: 'ProximaNova';
-                font-weight: bold;
-                margin-top: 17px;
-            }
-            .col-md-6 {
-                margin-top: 40px;
-            }
-            .items-section>img {
-                width: 100%;
-            }
-            .items-section {
-                display: flex;
-                grid-gap: 30px;
-            }
-        }
-        
-        @media (max-width: 950px) {
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-            }
-            #announcement .banner-1,
-            .banner-2 {
-                width: 100%;
-            }
-            .col-md-6 {
-                margin-top: 10px;
-            }
-            .col-md-6:not(:first-child) {
-                margin-left: 0px;
-            }
-            .items-section {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-            }
-            .flex {
-                display: flex;
-            }
-            .col-6 {
-                display: flex;
-                font-family: 'ProximaNova';
-                font-weight: bold;
-                margin-top: 17px;
-            }
-            .items-section {
-                display: flex;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .items-section {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 30px;
-            }
-        }
-        
-        @media (max-width: 540px) {
-            .items-section {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 450px) {
-            .items-section {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        /* Book hissesi */
-        
-        @media (min-width: 950px) {
-            .row {
-                display: flex;
-            }
-            .d-100 {
-                width: 100%;
-            }
-            .flex-column {
-                flex-direction: column;
-            }
-            .col {
-                font-family: 'ProximaNova';
-                margin-left: 20px;
-            }
-            .key {
-                width: 25%;
-                word-wrap: break-word;
-            }
-            .mb-4 {
-                display: flex;
-                grid-gap: 5px;
-                list-style: none;
-            }
-            .mp-5 {
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-        
-        @media (max-width: 950px) {
-            .row {
-                display: flex;
-            }
-            .flex-column {
-                flex-direction: column;
-            }
-            .img-book>img {
-                width: 100%;
-            }
-            .col {
-                font-family: 'ProximaNova';
-            }
-            .key {
-                width: 50%;
-                word-wrap: break-word;
-            }
-            .starts {
-                display: flex;
-                margin-top: 20px;
-                grid-gap: 5px;
-            }
-            .mb-4 {
-                display: flex;
-                grid-gap: 5px;
-                list-style: none;
-            }
-            .mp-5 {
-                display: block;
-                justify-content: space-between;
-            }
-        }
-        
-        .starts {
-            display: flex;
-            margin-top: 20px;
-            grid-gap: 5px;
-        }
-        
-        .link {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 15px;
-            color: #808080;
-        }
-        
-        .tarix {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 36px;
-            margin-top: 20px;
-        }
-        
-        .yazici {
-            font-weight: bold;
-            font-style: normal;
-            font-size: 16px;
-        }
-        
-        .d-flex {
-            display: flex;
-            padding: 6px;
-        }
-        
-        .value {
-            font-weight: bold;
-        }
-        
-        .features .attribute:nth-child(odd) {
-            background: #F7F7F7;
-        }
-        
-        .px-2 {
-            font-family: 'ProximaNova';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 35px;
-            letter-spacing: 1.25px;
-            color: #F1911D;
-        }
-        
-        .px-3,
-        .px-4 {
-            color: #808080;
-            font-size: 18px;
-        }
-        
-        .mt-2 {
-            font-family: 'ProximaNova';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 30px;
-            color: #000000;
-        }
-        
-        .mt-4 {
-            font-family: 'ProximaNova';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 24px;
-            color: #979797;
-        }
-        
-        .mt-3,
-        .ml-2 {
-            width: 25px;
-            margin-bottom: 17px;
-            margin-left: 6px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: transparent;
+    color: #000;
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url(../fonts/ProximaNova-Bold.woff2) format("woff2"), url(../fonts/ProximaNova-Bold.woff) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: MacklinDisplayLight;
+    src: url(../fonts/MacklinDisplay-Light.woff2) format("woff2"), url(../fonts/MacklinDisplay-Light.woff) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url(../fonts/ProximaNova-Regular.woff2) format("woff2"), url(../fonts/ProximaNova-Regular.woff) format("woff");
+    font-display: swap
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.item-title {
+    font-family: 'ProximaNovaRegular';
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.item-title-white {
+    color: #FFFFFF;
+    font-family: 'ProximaNovaRegular';
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.item-author {
+    font-weight: bold;
+    font-family: 'ProximaNovaRegular';
+    font-size: 11px;
+    color: #808080;
+}
+
+.item-author-white {
+    color: #E5E5E5;
+    font-weight: 400;
+    font-family: 'ProximaNovaRegular';
+    font-size: 11px;
+}
+
+.item-price {
+    font-family: 'ProximaNovaRegular';
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item-price-white {
+    color: #FFFFFF;
+    font-family: 'ProximaNovaRegular';
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.btn-add-basket {
+    font-family: 'ProximaNovaBold';
+    border: 1px solid #db0909;
+    background: #fff;
+    padding: 3px;
+    font-size: 14px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.btn-add-basket:hover {
+    color: #ffffff;
+    background: #ec111d;
+    transition: all 0.4s;
+}
+
+.btn-add-basket-white {
+    font-family: 'ProximaNovaBold';
+    border: none;
+    color: #000;
+    background: #fff;
+    padding: 3px;
+    font-size: 14px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.btn-add-basket-white:hover {
+    color: #fff;
+    background: #ec111d;
+    transition: all 0.4s;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+@media (min-width:950px) {
+    .user {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .user-action {
+        display: flex;
+        align-items: center;
+        flex-direction: column
+    }
+
+    .action-img {
+        margin-bottom: 3px;
+    }
+
+    .user-action:not(:first-child) {
+        margin-left: 30px
+    }
+
+    .search-section {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        font-family: 'ProximaNovaRegular';
+    }
+
+    .section-link {
+        font-size: 48px;
+        font-family: 'MacklinDisplayLight';
+    }
+
+    .flex-text {
+        display: flex;
+        margin-top: 8px;
+        font-family: 'ProximaNovaBold';
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .items {
+        width: 100%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(6, 1fr);
+        padding-top: 15px;
+    }
+
+    .user-action {
+        font-size: 13px;
+    }
+
+    .icon-burger {
+        display: none;
+    }
+
+    .md-none {
+        display: none;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+@media (max-width:950px) {
+    .qanun-logo {
+        margin-bottom: 20px;
+    }
+
+    .action-img {
+        width: 25px;
+        float: right;
+        margin-top: 15px;
+    }
+
+    .flex-text {
+        display: flex;
+        margin-top: 8px;
+        font-family: 'ProximaNovaBold';
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .md-none {
+        display: none;
+    }
+
+    .icon-burger {
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+
+    .header-menu {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .wtsp {
+        font-size: 13px;
+    }
+
+    .menu {
+        font-size: 13px;
+    }
+
+    .search-section {
+        margin-top: 20px;
+    }
+
+    .section-link {
+        font-size: 36px;
+        font-family: 'MacklinDisplayLight';
+    }
+
+    .d-md-none {
+        display: none;
+    }
+
+    .items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 25px;
+        padding-top: 20px;
+    }
+
+    .lorem {
+        margin-left: 25px;
+        font-size: 10px;
+    }
+
+    .main-silder {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .d-md-none {
+        display: none;
+    }
+
+    .flex-text {
+        display: flex;
+        margin-top: 8px;
+        font-family: 'ProximaNovaBold';
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+        padding-top: 15px
+    }
+}
+
+@media (max-width: 540px) {
+    .d-md-none {
+        display: none;
+    }
+
+    .flex-text {
+        display: flex;
+        margin-top: 8px;
+        font-family: 'ProximaNovaBold';
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .d-md-none {
+        display: none;
+    }
+
+    .flex-text {
+        display: flex;
+        margin-top: 8px;
+        font-family: 'ProximaNovaBold';
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+        padding-top: 15px;
+    }
+}
+
+/*---Number---*/
+
+.wtsp {
+    color: #000000;
+    font-size: 13px;
+    line-height: 30px;
+    font-family: 'ProximaNovaRegular';
+}
+
+/*---header---*/
+
+.header {
+    width: 100%;
+    background: #F7F7F7;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.menu {
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 30px;
+    font-family: 'ProximaNovaRegular';
+}
+
+@media (min-width:950px) {
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:950px) {
+    .d-md-none {
+        display: none;
+    }
+}
+
+.menu:not(:last-child) {
+    margin-right: 25px;
+}
+
+/* languages */
+
+.languages {
+    display: flex;
+    list-style: none;
+    grid-gap: 15px;
+    font-size: 12px;
+    padding-left: 54px;
+    font-family: 'ProximaNovaRegular';
+}
+
+/* Search section */
+
+.col {
+    width: 100%;
+}
+
+button[type=submit] {
+    cursor: pointer
+}
+
+.main-search {
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+.locale:not(:first-child) {
+    margin-left: 16px
+}
+
+.search-field,
+.submit-search {
+    border: 1px solid #e7e7e7;
+}
+
+.search-field {
+    padding: 12px;
+    border-right: 0;
+}
+
+.submit-search {
+    border-left: 0;
+    padding-left: 17px;
+    padding-right: 17px;
+    background: none;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.main-search {
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+/* menu-2 */
+
+ul {
+    display: flex;
+    list-style: none;
+    line-height: 70px;
+}
+
+.nav-link:not(:first-child) {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-family: 'ProximaNovaRegular';
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-tag {
+    font-weight: bold;
+    font-family: 'ProximaNovaRegular';
+}
+
+.qanun {
+    margin-right: 25px;
+}
+
+/* tag */
+
+.section-tag  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.section-tag-dark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-family: 'ProximaNovaRegular';
+}
+
+.tag-black {
+    background: #292929;
+    padding-bottom: 35px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-link-white,
+.section-title-white {
+    color: #fff;
+}
+
+/* images */
+.item-img>img {
+    width: 100%;
+}
+
+.article-actions {
+    display: flex;
+}
+
+.price-info {
+    display: flex;
+    margin-top: 10px;
+}
+
+.icon {
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+
+.icon-white {
+    margin-left: 4px;
+}
+
+.article-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+/* Basket */
+
+.add-basket {
+    border: solid 1px #db0909;
+    background-color: #ffff;
+    flex-grow: initial;
+    padding: 5px;
+    border-radius: 15px;
+    font-family: 'ProximaNovaRegular';
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 600;
+}
+
+.add-basket-white {
+    border: solid 1px #e5e5e5;
+    background: #E5E5E5;
+    flex-grow: initial;
+    padding: 5px;
+    border-radius: 15px;
+    font-family: 'ProximaNovaRegular';
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 600;
+}
+
+.add-wishlist-white {
+    border: none;
+    background-color: #292929;
+    margin-right: 5px;
+}
+
+.add-wishlist {
+    border: none;
+    margin-right: 5px;
+}
+
+@media (min-width:950px) {
+    .flex {
+        display: flex;
+        font-family: 'ProximaNovaBold';
+    }
+
+    .stylesheet{
+        display: flex;
+        font-family: 'ProximaNovaRegular';
+        font-weight: bold;
+        margin-top: 17px;
+    }
+
+    .img-box:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    .img-box {
+        margin-top: 40px;
+    }
+
+    .w-responsive {
+        width: 100%;
+    }
+
+    .items-section>img {
+        width: 100%;
+    }
+
+    .items-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 30px;
+        padding-top: 20px;
+    }
+
+    .items-footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        padding-top: 20px;
+    }
+
+    .date {
+        font-size: 11px;
+        margin-top: 16px;
+        font-family: 'ProximaNovaRegular';
+        color: #808080;
+    }
+    
+    .poetrist{
+        font-size: 16px;
+        font-family: 'ProximaNovaBold';
+        color: #000000;
+        margin-top: 3px;
+    }
+    
+    .scribe {
+        font-size: 16px;
+        font-family: 'ProximaNovaRegular';
+        font-weight: 400;
+        color: #000000;
+        margin-top: 4px;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .w-responsive {
+        width: 100%;
+    }
+
+    .img-box {
+        margin-top: 10px;
+    }
+
+    .img-box:not(:first-child) {
+        margin-left: 0px;
+    }
+
+    .items-section {
+        display: flex;
+        grid-gap: 30px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .stylesheet{
+        display: flex;
+        font-family: 'ProximaNovaRegular';
+        font-weight: bold;
+        margin-top: 17px;
+    }
+
+    .items-footer {
+        width: 100%;
+        display: block;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 30px;
+        padding-top: 20px;
+    }
+
+    .items-section {
+        display: flex;
+    }
+
+    .r-margin-bottom {
+        margin-bottom: 25px;
+    }
+
+    .date {
+        font-size: 11px;
+        margin-top: 10px;
+        font-family: 'ProximaNovaRegular';
+        color: #808080;
+    }
+    
+    .poetrist{
+        font-size: 16px;
+        font-family: 'ProximaNovaBold';
+        color: #000000;
+    }
+    
+    .scribe {
+        font-size: 16px;
+        font-family: 'ProximaNovaRegular';
+        font-weight: 400;
+        color: #000000;
+    }
+}
+
+@media (max-width: 768px) {
+    .items-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width: 540px) {
+    .items-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .items-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Book hissesi */
+
+@media (min-width: 950px) {
+    .row {
+        display: flex;
+    }
+
+    .d-100 {
+        width: 100%;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .col {
+        font-family: 'ProximaNovaRegular';
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .key {
+        width: 25%;
+        font-family: 'ProximaNovaRegular'
+    }
+
+    .mb-4 {
+        display: flex;
+        grid-gap: 5px;
+        list-style: none;
+    }
+
+    .mp-5 {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .row {
+        display: flex;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .key {
+        width: 50%;
+        font-family: 'ProximaNovaRegular';
+    }
+
+    .value {
+        font-weight: bold;
+        font-family: 'ProximaNovaRegular'
+    }
+
+    .starts {
+        display: flex;
+        margin-top: 20px;
+        grid-gap: 5px;
+    }
+
+    .mb-4 {
+        display: flex;
+        grid-gap: 5px;
+        list-style: none;
+    }
+
+    .mp-5 {
+        display: block;
+        justify-content: space-between;
+    }
+}
+
+.width {
+    max-width: 100%;
+}
+
+.starts {
+    display: flex;
+    margin-top: 20px;
+    grid-gap: 5px;
+}
+
+.link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #808080;
+}
+
+.title {
+    font-family: 'ProximaNovaBold';
+    font-size: 35px;
+    margin-top: 18px;
+    line-height: 36px;
+}
+
+.author {
+    font-family: 'ProximaNovaBold';
+    font-size: 16px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.attribute {
+    padding: 6px;
+}
+
+.features .attribute:nth-child(odd) {
+    background: #F7F7F7;
+}
+
+.px-2 {
+    font-family: 'ProximaNovaBold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1.25px;
+    color: #F1911D;
+}
+
+.px-3,
+.px-4 {
+    color: #808080;
+    font-size: 18px;
+}
+
+.mt-2 {
+    font-family: 'ProximaNovaRegular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #000000;
+}
+
+.mt-4 {
+    font-family: 'ProximaNovaRegular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #979797;
+}
+
+.mt-3,
+.ml-2 {
+    width: 25px;
+    margin-bottom: 17px;
+    margin-left: 6px;
+}

@@ -1,3 +1,0 @@
-1-classlari duzeltmek..!
-2-footer hisseni responsive etmek!
-3-fix edikden sonra git-e yuklemek!:)
